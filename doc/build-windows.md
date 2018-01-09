@@ -67,6 +67,12 @@ build process.
 To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
+    
+    sudo apt install software-properties-common
+    sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu zesty universe"
+    sudo apt update
+    sudo apt upgrade
+    sudo update-alternatives --config x86_64-w64-mingw32-g++ # Set the default mingw32 g++ compiler option to posix.
 
 Then build using:
 
